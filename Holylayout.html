@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holyLayout</title>
+    <style>
+     
+
+     body {
+         display:flex;
+         flex-direction: column;
+         margin: 30% 10%;
+         font-weight: bold;
+         font-family: Helvetica;
+         font-size: 30px;
+         text-align: center;
+         color: white;                
+         vertical-align: middle;
+
+     }
+      
+     header,footer{
+                background:repeating-linear-gradient(38deg, rgb(17, 105, 117), rgb(117, 231, 227) 90%);
+                flex: auto;
+                padding-top: 3rem;
+                padding-bottom:3rem;
+                  }
+
+
+            footer {
+            background:repeating-linear-gradient(38deg ,rgb(117, 231, 227) 10%,rgb(17, 105, 117) 125%);
+
+            }
+
+
+            main {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                height: 500px;                
+            }
+
+            main aside {
+                background:repeating-linear-gradient(40deg, rgb(65, 209, 241),white,rgb(9, 235, 156));
+                flex-grow: 1;
+                padding-top: 10rem;
+                color:rgb(5, 59, 71);
+
+        
+            }
+            main article {
+                background:repeating-linear-gradient(40deg, rgb(4, 191, 233), rgb(117, 231, 227),white);
+                flex-grow: 2;
+                padding-top: 10rem;
+            }
+     
+
+            @media(max-width:767px) {
+
+
+                main {
+                    flex-wrap: wrap;
+                    display:flex;
+                    height: 500px;
+                }
+
+                main aside {
+                    width: 85%;
+                    padding:1rem;
+                    height: 10%;
+                    }
+                main article {
+                    width: 85%;
+                    height: 36%;
+                    
+                    
+                    }
+                   
+            }
+
+    </style>
+    
+</head>
+<body>
+
+
+            <!--holylayout-->
+
+            <header>
+                header
+            </header>
+            <main>
+                <aside>nav1</aside>
+                <article>article</article>
+                <aside>nav2</aside>
+            </main>
+            <footer>
+                footer
+            </footer>
+
+
+
+</body>
+
+
+</html>
